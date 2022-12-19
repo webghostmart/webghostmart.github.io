@@ -1,0 +1,219 @@
+$main-color: #9400FF
+@mixin btn_link
+	display: block
+	font-family: 'IBM Plex Mono'
+	font-style: normal
+	font-weight: 400
+	font-size: 13px
+	text-transform: capitalize
+	text-align: center
+	color: #FFFFFF
+	text-decoration: none
+
+*
+	font-family: 'Manrope', sans-serif
+
+a
+	text-decoration: none
+
+body
+	background: #000
+
+container
+	width: 1215px
+
+header
+	height: 955px
+	background: url("../img/main_bg.jpg") center (center / cover) no-repeat
+
+.btn
+	display: block
+	width: 180px
+	height: 50px
+	border: none
+	border-radius: 200px
+	background: $main-color
+	@include btn_link
+	line-height: 13px
+	transition: 0.5s all
+	&:hover
+		background: #8500D7
+
+.navbar
+	display: flex
+	justify-content: space-between
+	padding: 28px 15px 28px 40px
+	&_menu
+		display: flex
+		justify-content: space-between
+		list-style-type: none
+		margin-bottom: 0
+		padding-left: 0
+	&_item
+		padding-right: 40px
+		&_link
+			font-family: 'IBM Plex Mono'
+			font-style: normal
+			font-weight: 400
+			font-size: 13px
+			text-align: center
+			text-transform: capitalize
+			color: #FFFFFF
+			text-decoration: none
+			&:hover
+				color:$main-color
+	&_btn
+		width: 91px
+		height: 21px
+		&:hover
+			background: #8500D7
+			
+			
+.promo
+	&_title
+		margin-top: 115px
+		font-size: 16px
+		line-height: 16px
+		color: #FFFFFF
+	&_text
+		width: 578px
+		margin-top: 14px
+		font-size: 48px
+		line-height: 62px
+		color: #FFFFFF
+	&_btn
+		margin-top: 58px
+		width: 212px
+		height: 50px
+	&_descr
+		display: flex
+		justify-content: space-between
+		width: 870px
+		margin-top: 133px
+		
+		&_item
+			width: 232px
+			&:nth-child(3)
+				width: 300px
+			&_title
+				font-size: 16px
+				color: #FFF
+			&_text
+				margin-top: 19px
+				font-size: 16px
+				line-height: 30px
+				color: rgba(255, 255, 255, 0.65)
+
+.unique
+	
+	padding-top: 101px
+	&_wrapper
+		display: flex
+		justify-content: space-between
+	&_title
+		margin-top: 247px
+		font-size: 48px
+		line-height: 48px
+		color: #FFF 
+	&_list
+		margin-top: 22px
+		list-style-type: none
+		font-size: 15px
+		line-height: 30px
+		color: #FFFFFF
+		margin-bottom: 0
+	&_btn
+		margin-top: 55px
+		width: 212px
+		height: 50px	
+.render
+	padding-top: 150px
+	&_title
+		font-size: 29px
+		text-align: center
+		text-transform: capitalize
+		color: #FFFFFF
+		margin-bottom: 0
+		&_2
+			margin-top: 100px
+	&_img
+		margin-top: 31px
+		margin-left: 35px
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		width: 945px
+		margin: 67px 0 0 170px
+	&_subtitle
+		font-size: 15px
+		text-align: center
+		color: #999999
+	&_list
+		margin-top: 22px
+		font-size: 14px
+		line-height: 22px
+		text-align: center
+		color: #FFFFFF
+		list-style-type: none
+		padding-left: 0
+		margin-bottom: 0
+.request
+	height: 813px
+	padding: 100px
+	&_wrapper
+		display: flex
+		justify-content: space-evenly
+	&_img
+		height: 396px
+		margin: 100px 0 0 100px
+	&_descr
+		width: 500px
+		margin-top: 185px
+	&_title
+		font-size: 29px
+		line-height: 40px
+		text-transform: capitalize
+		color: #FFFFFF
+	&_text
+		margin-top: 35px
+		font-size: 16px
+		line-height: 30px
+		color: #EBEBEB
+	&_btn
+		margin-top: 26px	
+.grab
+	height: 433px
+	padding: 115px 0
+	background: url("../img/last_bg.jpg") center (center / cover) no-repeat
+	&_title
+		font-size: 51px
+		line-height: 51px
+		text-align: center
+		color: #FFFFFF
+	&_text
+		margin-top: 32px
+		font-size: 18px
+		line-height: 26px
+		text-align: center
+		color: rgba(255, 255, 255, 0.7)
+	&_btn
+		margin: 0 auto
+		margin-top: 42px
+footer
+	padding: 80px 0
+	.footer
+		&_img
+			display: block
+			margin: 0 auto
+		&_credits
+			margin-top: 24px
+			font-size: 16px
+			text-align: center
+			color: #FFFFFF
+			&_link
+				color: $main-color
+		&_copyright
+			margin-top: 32px
+			font-size: 11px
+			text-align: center
+			color: #FFFFFF
